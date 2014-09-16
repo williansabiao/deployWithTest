@@ -1,0 +1,23 @@
+{
+  "name": "deployWithTest",
+  "version": "0.0.0",
+  "description": "",
+  "main": "factorial.js",
+  "scripts": {
+    "test": "mocha factorial_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willianjedai/deployWithTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willianjedai/deployWithTest/issues"
+  },
+  "homepage": "https://github.com/willianjedai/deployWithTest",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
+  }
+}

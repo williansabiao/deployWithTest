@@ -1,0 +1,22 @@
+{
+  "apps": [{
+    "name": "test",
+    "script": "factorial.js",
+    "env": {
+      "COMMON_VARIABLE": "true"
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    }
+  }],
+  "deploy": {
+    "production" : {
+      "user": "willian",
+      "host": "192.168.56.103",
+      "ref": "origin/master",
+      "repo": "git@github.com:willianjedai/deployWithTest.git",
+      "path": "/var/www/deployWithTest",
+      "post-deploy": "npm install && pm2 startOrRestart deploy.json --env production"
+    }
+  }
+}
